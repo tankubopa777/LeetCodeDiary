@@ -8,6 +8,9 @@
     },
     {
       "path": "26. Remove Duplicates from Sorted Array"
+    },
+    {
+      "path": "58. Length of Last Word"
     }
   ],
   "settings": {}
