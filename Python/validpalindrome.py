@@ -1,3 +1,5 @@
+from typing import Optional
+from typing import ListNode
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         y = ""
@@ -15,3 +17,7 @@ class Solution:
         else : 
             return False
 
+    def isNumPalindrome(self,  head: Optional[ListNode]) -> bool:
+        print(5555)
+
+Solution.isNumPalindrome()
