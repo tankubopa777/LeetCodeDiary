@@ -1,5 +1,4 @@
 from typing import Optional
-from typing import ListNode
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         y = ""
