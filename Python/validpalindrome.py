@@ -16,7 +16,4 @@ class Solution:
         else : 
             return False
 
-    def isNumPalindrome(self,  head: Optional[ListNode]) -> bool:
-        print(5555)
-
 Solution.isNumPalindrome()
