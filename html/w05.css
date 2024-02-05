@@ -1,0 +1,17 @@
+h1 {
+    color: #66e;
+    margin: 0.5em;
+    background: #aaa;
+    text-align: end;
+  }
+  
+  .student-info {
+    font-size: 50px;
+    color: #abe;
+  }
+  
+  #hello-button {
+    background-color: #99a;
+    color: #fff;
+    border-radius: 0.5em;
+  }
