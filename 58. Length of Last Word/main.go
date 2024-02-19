@@ -47,5 +47,9 @@ func findTheDifference(s string, t string) {
 	}
 	fmt.Println(result)
 }
+
+func kWeakestRows(mat [][]int, k int) []int {
+    
+}
 	
 	
