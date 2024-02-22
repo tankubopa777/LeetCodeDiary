@@ -9,4 +9,3 @@ for i in nums :
 for i in listpow :
     if nums.count(i) == 1 :
         print (f"{i}")
-
