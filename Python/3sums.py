@@ -31,3 +31,27 @@ class Solution:
 
 nums = [-1,0,1,2,-1,-4]
 Solution().threeSum(nums)
+
+# abs(a[i] - x) + abs(a[1] - x) + ... abs(a[a.length - 1] - x)
+# a = [2, 4, 7] the result is 4
+def minAbsSumnums(nums):
+    min_sum = float('inf')  # Initialize with a large value
+    closest_element = None
+
+    for listNumber in range(len(a)):
+        current_sum = 0
+        for sumNumber in range(len(a)):
+            difference = abs(a[sumNumber] - a[listNumber])
+            current_sum += difference
+
+        if current_sum < min_sum:
+            min_sum = current_sum
+            closest_element = a[listNumber]
+        elif current_sum == min_sum and a[listNumber] < closest_element:  # Tiebreaker for smaller element
+            closest_element = a[listNumber]
+
+    return closest_element
+
+
+a = [2, 3]
+print(minAbsSumnums(a))  # 2
