@@ -2,57 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Top 3 Game</title>
+    <title>My Top 3 Games</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 767px) {
+            /* Hide the original table and display the custom layout on small screens */
+            .table-responsive table {
+                display: none;
+            }
+
+            .custom-stack {
+                display: block;
+                margin-bottom: 1rem;
+                background: #fff;
+                padding: 0.5rem;
+                border: 1px solid #ddd;
+            }
+
+            .custom-stack img {
+                margin-bottom: 0.5rem;
+            }
+
+            .custom-stack a {
+                display: block;
+                margin-top: 0.5rem;
+            }
+        }
+
+        /* Display original table on larger screens and hide the custom layout */
+        @media (min-width: 768px) {
+            .custom-stack {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body style="background-color: #f0f0f0; color: #333;">
-    <h1 style="text-align: center;">My Top 3 Game</h1>
-    <table border="1" style="width: 100%; border-collapse: collapse;">
-        <tr>
-            <th style="background-color: #51C2D5; color: black;">อันดับ</th>
-            <th style="background-color: #51C2D5; color: black;">เกม</th>
-            <th style="background-color: #51C2D5; color: black;">รูปเกม</th>
-            <th style="background-color: #51C2D5; color: black;">เนื้อหา</th>
-            <th style="background-color: #51C2D5; color: black;">แหล่งที่มา</th>
-        </tr>
-        <tr>
-            <td style="text-align: center; background-color: #BBF1FA;">1</td>
-            <td style="text-align: center; background-color: #BBF1FA;">Cyberpunk 2077</td>
-            <td style="text-align: center; background-color: #BBF1FA;"><img src="https://cdn1.epicgames.com/offer/77f2b98e2cef40c8a7437518bf420e47/EGS_Cyberpunk2077UltimateEdition_CDPROJEKTRED_Editions_S1_2560x1440-b8bfbed19257188c717a26ee5bf79b41" alt="The Shawshank Redemption" style="width: 100px; height: auto;"></td>
-            <td style="background-color: #BBF1FA;">
-                <ul>
-                    <li>เป็นเกม open world แนวโลกอนาคต</li>
-                    <li>เล่นไป 151.7 ชม.</li>
-                </ul>
-            </td>
-            <td style="text-align: center; background-color: #BBF1FA;"><a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" target="_blank">Cyberpunk2077</a></td>
-        </tr>
-        <tr>
-            <td style="text-align: center; background-color: #BBF1FA;">2</td>
-            <td style="text-align: center; background-color: #BBF1FA;">Yakuza 0</td>
-            <td style="text-align: center; background-color: #BBF1FA;"><img src="https://i.ytimg.com/vi/UHoOkZ7zWu4/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gFCgTMA8=&rs=AOn4CLCNcVu2BbfNPNNgLH62pYIYsH1kyw" alt="Forrest Gump" style="width: 100px; height: auto;"></td>
-            <td style="background-color: #BBF1FA;"> 
-                <ol>
-                    <li>เป็นเกมรับบทเป็น Yakuza แนว Open world</li>
-                    <li>เล่นไป 99.1 ชม</li>
-                </ol>
-            </td>
-            <td style="text-align: center; background-color: #BBF1FA;"><a href="https://store.steampowered.com/app/638970/Yakuza_0/" target="_blank">Yakuza0</a></td>
-        </tr>
-        <tr>
-            <td style="text-align: center; background-color: #BBF1FA;">3</td>
-            <td style="text-align: center; background-color: #BBF1FA;">Ace attorney</td>
-            <td style="text-align: center; background-color: #BBF1FA;"><img src="https://cdn.akamai.steamstatic.com/steam/apps/787480/capsule_616x353.jpg?t=1701220385" alt="Inception" style="width: 100px; height: auto;"></td>
-            <td style=" background-color: #BBF1FA;">
-                <dl>
-                    <dt>เป็นเกมแนว</dt>
-                    <dd>รับบทเป็นสุดยอดทนาย และไขคดีต่างๆช่วยผู้คน</dd>
-                    <dt>เล่นไป</dt>
-                    <dd>88.5 ชม</dd>
-                    
-                </dl>
-            </td>
-            <td style="text-align: center; background-color: #BBF1FA;"><a href="https://store.steampowered.com/app/787480/Phoenix_Wright_Ace_Attorney_Trilogy/" target="_blank">Ace attorney</a></td>
-        </tr>
-    </table>
+    <div class="container">
+        <h1 class="text-center mt-4">My Top 3 Games</h1>
+        <div class="table-responsive">
+            <!-- Original table to be shown on larger screens -->
+            <table class="table">
+                <!-- table contents -->
+            </table>
+        </div>
+
+        <!-- Custom stacks for smaller screens -->
+        <div class="custom-stack">
+            <strong>อันดับ:</strong> 1
+            <strong>เกม:</strong> Cyberpunk 2077
+            <img src="https://cdn1.epicgames.com/offer/77f2b98e2cef40c8a7437518bf420e47/EGS_Cyberpunk2077UltimateEdition_CDPROJEKTRED_Editions_S1_2560x1440-b8bfbed19257188c717a26ee5bf79b41" alt="Cyberpunk 2077" class="img-fluid">
+            <strong>เนื้อหา:</strong>
+            <ul>
+                <li>เป็นเกม open world แนวโลกอนาคต</li>
+                <li>เล่นไป 151.7 ชม.</li>
+            </ul>
+            <a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" target="_blank">Cyberpunk2077</a>
+        </div>
+        <!-- Repeat for other entries -->
+
+    </div>
+    <!-- Bootstrap and necessary dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -18,3 +18,7 @@ func merge(nums1 []int, m int, nums2 []int, n int)  {
 	}
 }
 
+func findTheDifference(s string, t string) byte {
+    
+}
+
