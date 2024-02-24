@@ -25,4 +25,4 @@ for i in range(len(list)) :
     else : 
         print("true")
 
-
+print(list)
