@@ -30,7 +30,9 @@ func main() {
 	// p := o
 	// fmt.Println(p)
 
-	findTheDifference("abcdefg","abcdefgf")
+	// findTheDifference("abcdefg","abcdefgf")
+	maxProfit([]int{7,1,5,3,6,4})
+
 
 }
 
@@ -48,8 +50,14 @@ func findTheDifference(s string, t string) {
 	fmt.Println(result)
 }
 
-func kWeakestRows(mat [][]int, k int) []int {
+// func kWeakestRows(mat [][]int, k int) []int {
     
+// }
+	
+	
+func maxProfit(prices []int) int {
+    for _, i := range prices {
+		fmt.Println(i)
+	}
+	return 5
 }
-	
-	
