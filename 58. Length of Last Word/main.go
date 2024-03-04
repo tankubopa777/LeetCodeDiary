@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"sort"
 	"strings"
 )
 
@@ -30,7 +31,8 @@ func main() {
 	// p := o
 	// fmt.Println(p)
 
-	findTheDifference("abcdefg","abcdefgf")
+	// findTheDifference("abcdefg","abcdefgf")
+	containsDuplicate([]int{5,9,8,4,4})
 
 }
 
@@ -48,8 +50,16 @@ func findTheDifference(s string, t string) {
 	fmt.Println(result)
 }
 
-func kWeakestRows(mat [][]int, k int) []int {
-    
+func containsDuplicate(nums []int) bool {
+	sort.Slice(nums, func(i, j int) bool {
+		return nums[i] <= nums[j]
+	})
+
+    for i := 0 ; i < len(nums); i++ {
+		if i < (len(nums) - 1){
+		if nums[i] == nums[i+1]  {
+			return true
+		}}
+	}
+	return false
 }
-	
-	
