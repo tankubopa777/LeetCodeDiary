@@ -32,7 +32,8 @@ func main() {
 	// fmt.Println(p)
 
 	// findTheDifference("abcdefg","abcdefgf")
-	containsDuplicate([]int{5,9,8,4,4})
+	// containsDuplicate([]int{5,9,8,4,4})
+
 
 }
 
@@ -61,5 +62,19 @@ func containsDuplicate(nums []int) bool {
 			return true
 		}}
 	}
+
 	return false
+}
+
+func isAnagram(s string, t string) bool {
+	sSlice := []rune(s)
+	tSlice := []rune(t)
+	sort.Slice(sSlice, func(i, j int) bool {
+		return sSlice[i] < sSlice[j]
+	})
+	sort.Slice(tSlice, func(i, j int) bool {
+		return tSlice[i] < tSlice[j]
+	})
+
+	return string(sSlice) == string(tSlice) 
 }
