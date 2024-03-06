@@ -21,3 +21,7 @@ func isAnagram(s string, t string) bool {
 
 	return string(sSlice) == string(tSlice) 
 }
+
+func twoSum(nums []int, target int) []int {
+    
+}
