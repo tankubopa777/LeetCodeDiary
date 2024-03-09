@@ -33,6 +33,7 @@ func groupAnagrams(strs []string) [][]string {
 
     result := [][]string{} // Slice to store the groups of anagrams
     for _, group := range anagramMap {
+        fmt.Println(result, group)
         result = append(result, group)
     }
 
