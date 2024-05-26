@@ -1,9 +1,11 @@
 package main
 
+import "fmt"
+
 func main(){
 	nums := []int{2, 11, 15, 7}
 	target := 9
-	twoSum(nums, target)
+	fmt.Println(twoSum(nums, target))
 }
 
 func twoSum(nums []int, target int) []int {
